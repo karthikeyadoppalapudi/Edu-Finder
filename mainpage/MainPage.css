@@ -1,0 +1,28 @@
+/* page root */
+.mainpage-container {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 28px;
+  background: #f6f8fb;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial;
+}
+
+/* small utilities */
+.container-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* make sure children sections have spacing */
+.mainpage-container > * {
+  margin-bottom: 42px;
+}
+
