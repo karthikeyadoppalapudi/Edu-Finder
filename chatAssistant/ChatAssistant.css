@@ -1,0 +1,129 @@
+.ca-root {
+  padding: 30px 40px;
+  background: linear-gradient(#f5f3ff, #ffffff);
+}
+
+.ca-hero {
+  text-align: center;
+}
+
+.ca-badge {
+  background: #f3e8ff;
+  color: #7c3aed;
+  padding: 6px 14px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.ca-title {
+  font-size: 48px;
+  font-weight: 800;
+  color: #4c1d95;
+}
+
+.ca-sub {
+  color: #555;
+  max-width: 700px;
+  margin: auto;
+}
+
+.quick-grid {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.quick-btn {
+  border: 1px solid #d8b4fe;
+  background: #faf5ff;
+  color: #7c3aed;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.ca-chat-card {
+  margin-top: 30px;
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.ca-messages {
+  min-height: 200px;
+}
+
+.bubble {
+  max-width: 70%;
+  padding: 14px;
+  border-radius: 14px;
+  margin-bottom: 10px;
+}
+
+.bubble.bot {
+  background: #f3f4f6;
+}
+
+.bubble-time {
+  font-size: 12px;
+  color: #777;
+  margin-top: 5px;
+}
+
+.ca-input-box {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.ca-input-box input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.send-btn {
+  background: linear-gradient(to right, #a855f7, #ec4899);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0 18px;
+  cursor: pointer;
+}
+
+.ca-help-box {
+  margin-top: 40px;
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.ca-help-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.help-card {
+  padding: 18px;
+  border-radius: 14px;
+}
+
+.help-card.purple {
+  background: #f3e8ff;
+}
+.help-card.blue {
+  background: #e0f2fe;
+}
+.help-card.green {
+  background: #dcfce7;
+}
+.help-card.orange {
+  background: #ffedd5;
+}
