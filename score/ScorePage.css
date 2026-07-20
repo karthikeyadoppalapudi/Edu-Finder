@@ -1,0 +1,248 @@
+/* ========== PAGE BACKGROUND ========== */
+.score-container {
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #e9e4f0, #d3cce3);
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ========== HEADER ========== */
+.score-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.matching-btn {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: none;
+  padding: 10px 22px;
+  border-radius: 25px;
+  font-weight: 600;
+  color: #6b46c1;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* TITLE */
+.score-header h1 {
+  font-size: 58px;
+  font-weight: 800;
+  color: #5e3d9f;
+  margin-top: 25px;
+}
+
+/* SUBTEXT */
+.score-header p {
+  font-size: 18px;
+  color: #4b5563;
+  margin-top: 12px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ========== CARD ========== */
+.score-card {
+  max-width: 900px;
+  margin: 40px auto;
+  border-radius: 26px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.18);
+}
+
+/* ========== HEADER GRADIENT (FULL WIDTH STRIP) ========== */
+.step-header {
+  padding: 30px;
+  color: white;
+}
+
+/* STEP COLORS */
+.step1 .step-header {
+  background: linear-gradient(135deg, #3b82f6, #7c3aed);
+}
+
+.step2 .step-header {
+  background: linear-gradient(135deg, #9333ea, #ec4899);
+}
+
+.step3 .step-header {
+  background: linear-gradient(135deg, #22c55e, #2563eb);
+}
+
+/* HEADER FLEX */
+.step-header {
+  display: flex;
+  align-items: center;
+}
+
+/* ICON */
+.step-icon {
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 12px;
+  border-radius: 12px;
+}
+
+/* TITLE */
+.step-header h2 {
+  margin: 0;
+  margin-left: 15px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* SUBTEXT */
+.step-sub {
+  padding: 0 30px 25px 30px;
+  margin: 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: -10px;
+}
+
+/* ========== FORM BODY ========== */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 30px;
+  background: #f1f3f6;
+}
+
+/* INPUTS */
+.form-grid input {
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  background: #e5e7eb;
+  font-size: 14px;
+}
+
+/* DROPDOWN */
+.dropdown {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  background: #e5e7eb;
+}
+
+/* ========== STEP 3 SECTION ========== */
+.percentage-row {
+  display: flex;
+  gap: 15px;
+  padding: 30px;
+  background: #f1f3f6;
+}
+
+.percentage-input {
+  flex: 1;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  background: #e5e7eb;
+}
+
+/* BUTTON */
+.find-btn {
+  padding: 14px 26px;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  background: linear-gradient(135deg, #3b82f6, #7c3aed);
+  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.4);
+  cursor: pointer;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .score-header h1 {
+    font-size: 36px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .percentage-row {
+    flex-direction: column;
+  }
+}
+/* ========== COLLEGE RESULTS SECTION ========== */
+.results-section {
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+/* 🔥 COLLEGE CARD */
+.college-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 18px 22px;
+  margin-bottom: 18px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  transition: all 0.25s ease;
+}
+
+.college-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+}
+
+/* LEFT SIDE */
+.college-left h3 {
+  margin: 0 0 6px 0;
+  font-size: 20px;
+  color: #2d2d2d;
+}
+
+.college-left p {
+  margin: 3px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+/* RIGHT SIDE */
+.college-right {
+  display: flex;
+  align-items: center;
+}
+
+/* BUTTON */
+.view-btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #7c3aed, #3b82f6);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.view-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+  .college-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .college-right {
+    width: 100%;
+  }
+
+  .view-btn {
+    width: 100%;
+  }
+}
