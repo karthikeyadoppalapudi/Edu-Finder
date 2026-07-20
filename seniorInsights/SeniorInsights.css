@@ -1,0 +1,187 @@
+/* =============================
+   PAGE WRAPPER
+============================= */
+.insights-page {
+  padding: 40px clamp(20px, 5vw, 60px);
+  background: #f5f9ff;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* =============================
+   TAG
+============================= */
+.insights-tag {
+  margin-top: 20px;
+  text-align: center;
+  display: inline-block;
+  background: #f0d1ff;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  color: #8020c8;
+}
+
+/* =============================
+   TITLES
+============================= */
+.insights-title {
+  margin-top: 18px;
+  text-align: center;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 800;
+  color: #4c0078;
+}
+
+.insights-subtitle {
+  text-align: center;
+  color: #555;
+  margin-top: 6px;
+  margin-bottom: 28px;
+  font-size: clamp(14px, 1.5vw, 16px);
+}
+
+/* =============================
+   FEATURE CARDS
+============================= */
+.insights-features {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 35px 0 30px 0;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  width: clamp(250px, 30%, 300px);
+  padding: 24px;
+  border-radius: 18px;
+  color: #080808;
+  text-align: center;
+  cursor: pointer;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
+}
+
+/* Feature Colors */
+.blue {
+  background: linear-gradient(135deg, #2193ff, #00d2ff);
+}
+.pink {
+  background: linear-gradient(135deg, #ff0084, #ff8c00);
+}
+.orange {
+  background: linear-gradient(135deg, #ff5f6d, #ffc371);
+}
+.green {
+  background: linear-gradient(135deg, #3088bf, #00c6ff);
+}
+.purple {
+  background: linear-gradient(135deg, #7f00ff, #e100ff);
+}
+.red {
+  background: linear-gradient(135deg, #ff4b1f, #ff9068);
+}
+
+/* =============================
+   SEARCH BAR
+============================= */
+.insights-search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.insights-search input {
+  width: min(520px, 80%);
+  padding: 14px 20px;
+  border-radius: 14px;
+  border: none;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.insights-search input:focus {
+  outline: none;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* =============================
+   GRID TITLE
+============================= */
+.insights-grid-title {
+  text-align: center;
+  font-size: clamp(18px, 2vw, 22px);
+  margin-bottom: 22px;
+  font-weight: 700;
+}
+
+/* =============================
+   COLLEGE GRID
+============================= */
+.college-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 32px;
+  width: min(1150px, 90%);
+  margin: 0 auto;
+}
+
+/* =============================
+   COLLEGE CARD
+============================= */
+.college-card {
+  width: 90%;
+  padding: 30px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  color: #222;
+  position: relative;
+  cursor: pointer;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.college-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+}
+
+/* Badge */
+.college-badge {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: pink;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* =============================
+   MOBILE FIXES
+============================= */
+@media (max-width: 500px) {
+  .feature-card {
+    width: 100%;
+  }
+  .college-card {
+    padding: 22px;
+  }
+}
