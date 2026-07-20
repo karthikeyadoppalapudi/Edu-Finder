@@ -1,0 +1,126 @@
+/* Sidebar container */
+.sidebar {
+  z-index: 99;
+  width: 260px;
+  height: 100vh;
+  background: #ffffff;
+  border-right: 1px solid #e5e7eb;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.03);
+  transition: width 0.3s ease;
+}
+
+/* Remove default list styling */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Sidebar items */
+.sidebar ul li {
+  margin: 8px 0;
+}
+
+/* Links */
+.sidebar ul li a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 12px 20px;
+  text-decoration: none;
+
+  font-size: 15px;
+  color: #374151;
+
+  border-radius: 10px;
+
+  transition: background 0.25s ease, color 0.25s ease, transform 0.15s ease;
+}
+
+/* Hover effect */
+.sidebar ul li a:hover {
+  background: #eef2ff;
+  color: #4f46e5;
+  transform: translateX(4px);
+}
+
+/* Active page highlight */
+.sidebar ul li a.active {
+  background: #e0e7ff;
+  font-weight: 600;
+  color: #4338ca;
+  border-left: 4px solid #4f46e5;
+  padding-left: 16px; /* compensate for left border */
+}
+
+/* Smooth scrollbar styling */
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #c7c7c7;
+  border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* RESPONSIVE — collapse sidebar on small screens */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 210px;
+  }
+
+  .sidebar ul li a {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    width: 180px;
+  }
+
+  .sidebar ul li a {
+    gap: 10px;
+    font-size: 13.5px;
+    padding: 9px 14px;
+  }
+}
+/* TOGGLE BUTTON */
+.sidebar-toggle {
+  position: fixed;
+  top: 22px;
+  left: 18px;
+  z-index: 120;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 6px 8px;
+  cursor: pointer;
+}
+
+/* COLLAPSE */
+.sidebar.closed {
+  width: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.sidebar.open {
+  width: 260px;
+}
