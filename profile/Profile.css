@@ -1,0 +1,97 @@
+/* ================= PROFILE DROPDOWN ================= */
+
+.profileMenu {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 260px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 12px 0;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.2s ease-in-out;
+  z-index: 999;
+}
+
+/* UPDATED */
+.profileHeader {
+  padding: 14px 16px;
+  margin: 8px 12px;
+  border-radius: 10px;
+  background: #f7f7fb;
+  border: 1px solid #eee;
+}
+
+.profileName {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.profileEmail {
+  font-size: 12px;
+  color: #666;
+  margin-top: 2px;
+}
+
+/* UPDATED */
+.adminTag {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 10px;
+  background: #6366f1;
+  color: #fff;
+  font-size: 10px;
+  border-radius: 999px;
+}
+
+/* ================= PROFILE OPTIONS ================= */
+
+/* UPDATED */
+.profileOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px;
+}
+
+/* UPDATED */
+.profileOption {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 10px;
+  background: #f9fafb;
+  transition: all 0.2s ease;
+}
+
+.profileOption:hover {
+  background: #eef2ff;
+  transform: translateX(2px);
+}
+
+/* UPDATED */
+.profileOption.logout {
+  background: #fff1f2;
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.profileOption.logout:hover {
+  background: #fee2e2;
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
