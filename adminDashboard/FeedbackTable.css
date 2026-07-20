@@ -1,0 +1,98 @@
+.feedback-table {
+  width: 100%;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr 1fr 1fr 1fr;
+  padding: 10px 0;
+  border-bottom: 1px solid #e4e7ec;
+  font-size: 14px;
+  font-weight: 600;
+  color: #475467;
+}
+
+.header-col {
+  padding: 5px 0;
+}
+.table-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr 1fr 1fr 1fr;
+  padding: 18px 0;
+  border-bottom: 1px solid #e4e7ec;
+  align-items: start;
+  font-size: 14px;
+}
+
+.badge {
+  background: #d1fadf;
+  color: #067647;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.from strong {
+  font-size: 14px;
+  color: #101828;
+}
+
+.email,
+.phone {
+  color: #667085;
+  font-size: 12px;
+}
+
+.subject strong {
+  font-size: 14px;
+  color: #101828;
+}
+
+.subject p {
+  color: #475467;
+  margin: 2px 0 10px 0;
+}
+
+.reply-box {
+  background: #eef4ff;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #344054;
+}
+
+.reply-title {
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.date {
+  color: #475467;
+}
+
+.status-btn {
+  background: #d1fadf;
+  color: #067647;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.action-btn.delete {
+  color: red;
+}

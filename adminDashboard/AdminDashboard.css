@@ -1,0 +1,46 @@
+.admin-page {
+  width: 100%;
+  padding: 30px;
+  background: #f5f8ff;
+}
+
+.admin-title {
+  font-size: 34px;
+  font-weight: 700;
+  color: #101828;
+}
+
+.admin-subtitle {
+  color: #475467;
+  margin-top: 4px;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.admin-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 25px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card-icon {
+  font-size: 22px;
+}
+
+.card-desc {
+  margin: 10px 0 20px 0;
+  font-size: 14px;
+  color: #667085;
+}
