@@ -1,0 +1,27 @@
+.cta-section {
+  text-align: center;
+  margin: 70px 0 100px 0;
+}
+
+.cta-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.cta-section p {
+  color: #666;
+  margin-bottom: 22px;
+  font-size: 17px;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 14px 26px;
+  background: linear-gradient(45deg, #4e00ff, #a100ff);
+  border-radius: 12px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+}
