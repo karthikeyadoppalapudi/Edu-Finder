@@ -1,0 +1,135 @@
+.notes-page {
+  padding: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+/* TOP BADGE */
+.notes-badge {
+  background: #eef2ff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  width: fit-content;
+  margin: 0 auto;
+  color: #4f46e5;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* TITLE */
+.notes-title {
+  text-align: center;
+  font-size: 38px;
+  margin-top: 20px;
+  color: #4c1d95;
+  font-weight: 800;
+}
+
+.notes-subtitle {
+  text-align: center;
+  margin-top: 10px;
+  color: #555;
+  font-size: 16px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* BUTTON */
+.center-row {
+  text-align: center;
+  margin-top: 25px;
+}
+.add-note-btn {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: white;
+  border: none;
+  padding: 10px 26px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* FILTER BOX */
+.filter-box {
+  margin-top: 35px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  display: flex;
+  gap: 25px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
+  align-items: flex-end;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filter-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 22%;
+}
+
+.filter-item.small {
+  width: 15%;
+}
+
+.filter-item label {
+  font-size: 12px;
+  color: #444;
+  font-weight: 600;
+}
+
+.filter-item input,
+.filter-item select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.results-count {
+  margin-left: auto;
+  background: #eef2ff;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-weight: 600;
+  color: #4f46e5;
+  font-size: 13px;
+}
+
+/* EMPTY BOX */
+.empty-box {
+  width: 90%;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 18px;
+  padding: 60px;
+  text-align: center;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+}
+
+.empty-icon {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.empty-box h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #222;
+}
+
+.empty-box p {
+  color: #666;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
