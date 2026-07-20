@@ -1,0 +1,134 @@
+/* CONTAINER */
+.roadmap-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* TITLE */
+.roadmap-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+/* BACK BUTTON */
+.change-profession {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #2193ff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* TIMELINE */
+.timeline {
+  position: relative;
+  margin-left: 20px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #e0e0e0;
+}
+
+/* ITEM */
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+/* NUMBER CIRCLE */
+.timeline-circle {
+  width: 42px;
+  height: 42px;
+  background: linear-gradient(135deg, #2193ff, #00d2ff);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin-right: 20px;
+  z-index: 1;
+}
+
+/* CARD */
+.timeline-content {
+  background: white;
+  padding: 22px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  transition: 0.3s;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+}
+
+/* HEADER */
+.timeline-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* ICON */
+.timeline-icon {
+  width: 40px;
+  height: 40px;
+}
+
+/* STEP LABEL */
+.step-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #888;
+}
+
+/* TEXT */
+.timeline-content h3 {
+  margin: 10px 0;
+}
+
+.timeline-content p {
+  color: #555;
+  font-size: 14px;
+}
+
+/* LIST */
+.timeline-content ul {
+  margin-top: 10px;
+  padding-left: 18px;
+}
+
+.timeline-content ul li {
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 15px;
+  }
+
+  .timeline-circle {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+
+  .timeline-content {
+    padding: 16px;
+  }
+}

@@ -1,0 +1,172 @@
+/* ========== PAGE BACKGROUND ========== */
+.guidance-page {
+  padding: 40px;
+  background: linear-gradient(135deg, #f3f4f7, #e6e9f0);
+  min-height: 100vh;
+  margin-left: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ========== HEADER/TOP SECTION ========== */
+.guidance-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* TAG */
+.tag {
+  display: inline-block;
+  background: #e9ecf5;
+  color: #5a5f73;
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/* MAIN HEADING */
+.heading {
+  font-size: 38px;
+  font-weight: 800;
+  margin-top: 15px;
+  color: #1f2937;
+}
+
+/* QUOTE BOX */
+.quote-box {
+  background: #ffffff;
+  max-width: 750px;
+  margin: 25px auto 0;
+  padding: 25px 30px;
+  border-radius: 18px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ========== TITLES ========== */
+.career-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 20px;
+  color: #1a1a1a;
+}
+
+.career-subtitle {
+  text-align: center;
+  color: #6b7280;
+  margin-top: 6px;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+/* ========== GRID ========== */
+.career-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ========== CARDS ========== */
+.career-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 28px 0;
+  text-align: center;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.career-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* ICON */
+.career-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 12px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  font-size: 26px;
+  color: white;
+}
+
+/* NAME */
+.career-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* ========== ROADMAP CONTAINER (MAIN CARD) ========== */
+.roadmap-container {
+  margin-top: 50px;
+  padding: 50px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #f8f9fc;
+  border-radius: 24px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* ========== STEP CARDS (INSIDE ROADMAP) ========== */
+.roadmap-step {
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 18px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+}
+
+.roadmap-step:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* STEP TITLE */
+.step-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+/* STEP TEXT */
+.step-content {
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 900px) {
+  .career-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .career-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+
+  .roadmap-container {
+    padding: 25px;
+  }
+}
