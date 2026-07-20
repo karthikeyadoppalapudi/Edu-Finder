@@ -1,0 +1,282 @@
+/* ==================== MAIN PAGE ==================== */
+.contact-page {
+  width: 100%;
+  padding: 20px;
+  padding-top: 40px;
+  background: linear-gradient(to bottom right, #f3f7ff, #eef3ff);
+  min-height: 100vh;
+}
+
+/* ==================== HEADER ==================== */
+.contact-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-header h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #2d2d87;
+}
+
+.contact-header p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #555;
+}
+
+.top-connect-btn {
+  background: #ece8ff;
+  border: none;
+  color: #5138ee;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* ==================== GRID LAYOUT ==================== */
+.contact-grid {
+  display: flex;
+  gap: 30px;
+}
+
+.left-section {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.partners-section {
+  width: 68%;
+}
+
+/* ==================== SUPPORT CARD ==================== */
+.support-card {
+  background: linear-gradient(135deg, #5a1bff, #9d3bff);
+  padding: 25px;
+  border-radius: 20px;
+  color: white;
+}
+
+.support-header {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.support-icon {
+  width: 45px;
+  height: 45px;
+  background: white;
+  color: #5a1bff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.support-phone-box {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.support-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.call-btn {
+  flex: 1;
+  background: #0ea34a;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.whatsapp-btn {
+  flex: 1;
+  background: #00c165;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.support-email {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  font-size: 15px;
+  align-items: center;
+}
+
+/* ==================== SUPPORT HOURS ==================== */
+.support-hours-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.hours-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 15px;
+}
+
+.time {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.time.green {
+  background: #d4ffe2;
+  color: #0a8f43;
+}
+
+.time.blue {
+  background: #ddebff;
+  color: #2a66dd;
+}
+
+.time.grey {
+  background: #efefef;
+  color: #555;
+}
+
+/* ==================== QUICK RESPONSE ==================== */
+.quick-response-card {
+  background: #ffeab5;
+  padding: 18px;
+  border-radius: 18px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.qr-icon {
+  background: #ffb258;
+  width: 40px;
+  height: 40px;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+/* ==================== PARTNER COLLEGES ==================== */
+.partners-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.partners-sub {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* ==================== COLLEGE CARDS ==================== */
+.college-card {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.college-header {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.college-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #ff00b8, #a100ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+.location {
+  color: #777;
+  font-size: 14px;
+}
+
+.college-info-grid {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.info-box {
+  flex: 1;
+  background: #f4faff;
+  padding: 12px;
+  border-radius: 14px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* CALL / MESSAGE BUTTONS */
+.college-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.msg-btn {
+  flex: 1;
+  background: #0078ff;
+  color: white;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+}
