@@ -1,0 +1,90 @@
+/* Full page styling */
+.students-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fb;
+  min-height: 100vh;
+}
+
+/* Title */
+.students-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form styling */
+.student-form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.student-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  width: 200px;
+}
+
+.student-form button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.student-form button:hover {
+  background-color: #45a049;
+}
+
+/* Table styling */
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.students-table th,
+.students-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.students-table th {
+  background-color: #4caf50;
+  color: white;
+}
+
+.students-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Action buttons */
+.action-btn {
+  padding: 6px 10px;
+  border: none;
+  margin: 2px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #2196f3;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
