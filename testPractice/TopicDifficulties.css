@@ -1,0 +1,77 @@
+.root-bg {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(to bottom, #e9f1ff, #e3edff);
+}
+
+.back-btn {
+  background: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+
+.td-title {
+  margin-top: 26px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.td-topic {
+  color: #2563eb;
+}
+
+.td-sub {
+  color: #666;
+}
+
+.td-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  max-width: 850px;
+}
+
+.td-card {
+  background: white;
+  padding: 26px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  transition: 0.2s ease;
+}
+
+.td-card:hover {
+  transform: scale(1.03);
+}
+
+.td-icon {
+  width: 46px;
+  height: 46px;
+  background: #2563eb20;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.td-name {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.td-desc {
+  color: #555;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.td-cta {
+  margin-top: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2563eb;
+}

@@ -1,0 +1,60 @@
+.root-bg {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(to bottom, #e9f1ff, #e3edff);
+}
+
+.back-btn {
+  background: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+
+.dt-title {
+  margin-top: 26px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.dt-level {
+  color: #2563eb;
+}
+
+.dt-sub {
+  color: #666;
+  margin-top: 4px;
+}
+
+.dt-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+  max-width: 850px;
+}
+
+.dt-test {
+  background: white;
+  padding: 30px 0;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  transition: 0.2s ease;
+}
+
+.dt-test:hover {
+  transform: scale(1.05);
+}
+
+.dt-test-label {
+  color: #555;
+  font-size: 13px;
+}
+
+.dt-test-num {
+  font-size: 26px;
+  color: #2563eb;
+  font-weight: 700;
+}

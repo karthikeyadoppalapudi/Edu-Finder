@@ -1,0 +1,136 @@
+.root-bg {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(to bottom, #e9f1ff, #e3edff);
+}
+
+/* --- Header --- */
+.ms-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.ms-badge {
+  background: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  font-size: 14px;
+}
+
+.ms-title {
+  font-size: 38px;
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+.ms-desc {
+  width: 60%;
+  margin: 12px auto 0;
+  color: #555;
+  font-size: 15px;
+}
+
+/* --- Grid Layout --- */
+.ms-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+/* --- Card --- */
+.ms-card {
+  background: white;
+  padding: 28px;
+  border-radius: 22px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+  transition: 0.25s ease;
+}
+
+.ms-card:hover {
+  transform: scale(1.03);
+}
+
+/* --- Icon Square --- */
+.ms-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.blue {
+  background: #3b82f6;
+}
+.pink {
+  background: #ec4899;
+}
+.green {
+  background: #22c55e;
+}
+.orange {
+  background: #fb923c;
+}
+
+/* --- Text --- */
+.ms-card-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 18px;
+}
+
+.ms-card-desc {
+  font-size: 14px;
+  color: #666;
+  margin-top: 6px;
+}
+
+/* --- Link --- */
+.ms-link {
+  margin-top: 14px;
+  display: inline-block;
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* --- Decorative Glow --- */
+.ms-decor {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  opacity: 0.2;
+}
+
+.blue-decor {
+  background: #3b82f6;
+}
+.pink-decor {
+  background: #ec4899;
+}
+.green-decor {
+  background: #22c55e;
+}
+.orange-decor {
+  background: #fb923c;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .ms-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ms-desc {
+    width: 90%;
+  }
+}
