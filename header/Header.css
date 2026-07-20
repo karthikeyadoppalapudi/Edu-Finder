@@ -1,0 +1,108 @@
+:root {
+  --header-height: 80px;
+  --sidebar-width: 260px; /* match your sidebar width */
+}
+
+/* fixed header across full viewport */
+.topHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  z-index: 60;
+  display: flex;
+  align-items: center;
+}
+
+/* headerInner is constrained so it doesn't cover the sidebar */
+.headerInner {
+  /* make the visible header content start after the sidebar */
+  margin-left: var(--sidebar-width);
+  /* ensures header content doesn't overflow into the sidebar */
+  max-width: calc(100% - var(--sidebar-width));
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 22px;
+  box-sizing: border-box;
+}
+
+/* left brand area */
+.brandLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logoBox {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #7c5cff, #3ab7ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: lightblue;
+  font-weight: 700;
+  box-shadow: 0 6px 18px rgba(124, 92, 255, 0.15);
+  font-size: 18px;
+}
+
+.brandTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1;
+}
+
+.brandTag {
+  font-size: 16px;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+/* right side: notifications + avatar */
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* optional small circular notification button placeholder */
+.notifBtn {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* avatar circle */
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 25%, #8a2be2, #ff5ea2 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 6px 18px rgba(139, 92, 246, 0.14);
+  cursor: pointer;
+}
+
+/* small responsive tweak */
+@media (max-width: 900px) {
+  .brandTag {
+    display: none;
+  }
+  .headerInner {
+    padding: 0 12px;
+  }
+}
